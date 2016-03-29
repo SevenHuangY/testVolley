@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity
 
     public void StringRequestPost()
     {
-        StringRequest request = new StringRequest(Request.Method.POST, url2,
+        StringRequest request = new StringRequest(Request.Method.POST, url,
             new Response.Listener<String>()
             {
                 @Override
@@ -134,8 +134,9 @@ public class MainActivity extends AppCompatActivity
             protected Map<String, String> getParams() throws AuthFailureError
             {
                 Map<String, String> map = new HashMap<>();
-                map.put("name", "foo");
-                map.put("password", "bar");
+                map.put("name", "Androidhive");
+                map.put("email", "abc@androidhive.info");
+                map.put("password", "password123");
                 return map;
             }
         };

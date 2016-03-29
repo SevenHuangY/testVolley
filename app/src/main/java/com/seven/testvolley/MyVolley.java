@@ -28,7 +28,7 @@ public class MyVolley
     {
         this.context = context;
         mRequestQueue = Volley.newRequestQueue(context.getApplicationContext());
-        mRequestQueue.start();
+
     }
 
     public MyVolley()
